@@ -6,7 +6,27 @@
 //  Copyright © 2017 Tommy Ryanto. All rights reserved.
 //
 
-import Foundation
+func test() -> Void {
+    print("function")
+}
 
-print("Hello, World!")
+func retAngka() -> Int {
+    return 10;
+}
 
+var myString1 = "Tommy"
+var myString2 = "Ryanto"
+
+myString1 += " "
+myString1 += myString2
+print("Nama: \(myString1)")
+
+print("Masukan angka: ")
+var mystring: String! = readLine();
+
+var angka = Int(mystring)!
+
+angka += retAngka()
+
+print("angka yang dimasukan(+10) : \(angka)")
+test()
